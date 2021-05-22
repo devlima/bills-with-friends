@@ -4,4 +4,7 @@ coverage
 
 # Ignore all HTML files:
 *.html
-package.json
+
+# Ignore plop templates
+
+plop/*
