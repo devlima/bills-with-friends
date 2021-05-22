@@ -9,6 +9,10 @@ module.exports = {
     style: {
       path: `${path.component}{{pascalCase name}}/{{pascalCase name}}.styled.ts`,
       template : `${templatePath}styled.ts.hbs`
+    },
+    spec: {
+      path: `${path.component}{{pascalCase name}}/{{pascalCase name}}.spec.ts`,
+      template: `${templatePath}spec.ts.hbs`
     }
   },
   page: {
@@ -19,6 +23,10 @@ module.exports = {
     style: {
       path: `${path.page}{{pascalCase name}}/{{pascalCase name}}.styled.ts`,
       template : `${templatePath}styled.ts.hbs`
+    },
+    spec: {
+      path: `${path.page}{{pascalCase name}}/{{pascalCase name}}.spec.ts`,
+      template: `${templatePath}spec.ts.hbs`
     }
   }
 }

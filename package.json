@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "generate": "plop"
+    "generate": "plop",
+    "test": "jest --coverage --maxWorkers=50%",
+    "test:watch": "jest --coverage --watch"
   },
   "dependencies": {
     "@types/node": "^15.6.0",
@@ -17,12 +19,20 @@
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-typescript": "^7.13.0",
+    "@testing-library/react": "^11.2.7",
+    "@types/jest": "^26.0.23",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
+    "babel-jest": "^26.6.3",
     "eslint": "^7.26.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.23.2",
     "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "jest-styled-components": "^7.0.4",
     "lint-staged": "^11.0.0",
     "plop": "^2.7.4",
     "prettier": "2.3.0",

@@ -39,12 +39,22 @@ module.exports = {
               path: component.style.path,
               templateFile: component.style.template,
             },
+            {
+              type: "add",
+              path: component.spec.path,
+              templateFile: component.spec.template,
+            },
           ]
         : [
             {
               type: "add",
               path: component.style.path,
               templateFile: component.style.template,
+            },
+            {
+              type: "add",
+              path: component.spec.path,
+              templateFile: component.spec.template,
             },
           ];
       return actions;
