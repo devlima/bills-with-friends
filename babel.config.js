@@ -2,5 +2,9 @@ module.exports = {
   presets: [
     ["@babel/preset-env", { targets: { node: "current" } }],
     ["@babel/preset-react"],
+    ["@babel/preset-flow"],
+    ["@babel/preset-typescript"],
+    ["next/babel"],
   ],
+  plugins: ["babel-plugin-styled-components"],
 };
