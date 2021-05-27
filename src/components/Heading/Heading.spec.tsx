@@ -19,6 +19,15 @@ describe("Heading", () => {
     ).toBeInTheDocument();
   });
 
+  it("should render with line", () => {
+    render(
+      <Heading data-testid="line" line>
+        Test
+      </Heading>
+    );
+    expect(screen.getByTestId("line")).toHaveStyleRule("display", "flex");
+  });
+
   it("should render with different levels", () => {
     levels.map((level) => {
       render(
