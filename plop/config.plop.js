@@ -11,8 +11,8 @@ module.exports = {
       template : `${templatePath}styled.ts.hbs`
     },
     spec: {
-      path: `${path.component}{{pascalCase name}}/{{pascalCase name}}.spec.ts`,
-      template: `${templatePath}spec.ts.hbs`
+      path: `${path.component}{{pascalCase name}}/{{pascalCase name}}.spec.tsx`,
+      template: `${templatePath}spec.tsx.hbs`
     }
   },
   page: {
@@ -25,8 +25,8 @@ module.exports = {
       template : `${templatePath}styled.ts.hbs`
     },
     spec: {
-      path: `${path.page}{{pascalCase name}}/{{pascalCase name}}.spec.ts`,
-      template: `${templatePath}spec.ts.hbs`
+      path: `${path.page}{{pascalCase name}}/{{pascalCase name}}.spec.tsx`,
+      template: `${templatePath}spec.tsx.hbs`
     }
   }
 }
