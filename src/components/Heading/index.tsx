@@ -1,30 +1,10 @@
-import styled, { css, attrs, as } from "styled-components";
-
-export const theme = {
-  colors: {
-    white: "#fff",
-    black: "#000",
-    gray: "#333333",
-    darkgray: "#141414",
-    offwhite: "#F5F5F5",
-  },
-  sizes: {
-    xsmall: "1rem",
-    small: "1.25rem",
-    normal: "1.5rem",
-    large: "2rem",
-  },
-  weights: {
-    thin: 100,
-    regular: 400,
-    bold: 700,
-  },
-};
+import styled, { css, attrs, as, withTheme } from "styled-components";
+import { globalTheme } from "styles/Theme";
 
 export type HeadingProps = {
-  color?: keyof typeof theme.colors;
-  size?: keyof typeof theme.sizes;
-  weight?: keyof typeof theme.weights;
+  color?: keyof typeof globalTheme.colors;
+  size?: keyof typeof globalTheme.sizes;
+  weight?: keyof typeof globalTheme.weights;
   lineHeight?: string | number;
   level?: 1 | 2 | 3 | 4 | 5 | 6;
   line?: boolean;
@@ -34,6 +14,7 @@ export const Heading = styled("h1").attrs<HeadingProps>(({ level = 1 }) => ({
   as: `h${level}`,
 }))<HeadingProps>`
   ${({
+    theme,
     color = "darkgray",
     size = "normal",
     weight = "regular",
