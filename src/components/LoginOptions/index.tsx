@@ -29,7 +29,7 @@ const LoginOptions = () => {
       <Wrapper>
         {data.map((option, index) => (
           <Button key={`loginOption${index}`}>
-            <img src={option.icone} alt={option.name} />
+            <img src={option.icone} alt={option.name} title={option.name} />
           </Button>
         ))}
       </Wrapper>
