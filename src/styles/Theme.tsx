@@ -3,11 +3,11 @@ import React from "react";
 
 export const globalTheme = {
   colors: {
-    white: "#fff",
-    black: "#000",
-    gray: "#333333",
-    darkgray: "#141414",
-    offwhite: "#F5F5F5",
+    white: "rgb(255,255,255)",
+    black: "rgb(0,0,0)",
+    gray: "rgb(51,51,51)",
+    darkgray: "rgb(20,20,20)",
+    offwhite: "rgb(245,245,245)",
   },
   sizes: {
     xsmall: "1rem",
