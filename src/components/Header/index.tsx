@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { Heading } from "components/Heading";
 import { useState, useEffect } from "react";
 import { Container } from "./Header.styled";
@@ -8,7 +8,7 @@ type HeaderProps = {
   line?: boolean;
 };
 
-const Header = ({ line = false }: HeaderProps) => {
+const Header: FC<HeaderProps> = ({ line = false }) => {
   return (
     <Container>
       <Link href="/" passHref>

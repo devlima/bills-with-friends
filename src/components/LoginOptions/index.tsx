@@ -1,5 +1,5 @@
 import { Heading } from "components/Heading";
-import React from "react";
+import React, { FC } from "react";
 import { Button, Wrapper } from "./LoginOptions.styled";
 
 const data = [
@@ -20,7 +20,7 @@ const data = [
   },
 ];
 
-const LoginOptions = () => {
+const LoginOptions: FC = () => {
   return (
     <div>
       <Heading level={2} size="normal" weight="bold" line>
