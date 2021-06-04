@@ -1,6 +1,5 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { Heading } from "components/Heading";
-import { useState, useEffect } from "react";
 import { Container } from "./Header.styled";
 import Link from "next/link";
 

@@ -1,5 +1,5 @@
 import { Heading } from "components/Heading";
-import React, { FC } from "react";
+import { FC } from "react";
 import { Button, Wrapper } from "./LoginOptions.styled";
 
 const data = [

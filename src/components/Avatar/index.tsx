@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import { FC } from "react";
 import { Picture } from "./Avatar.styled";
